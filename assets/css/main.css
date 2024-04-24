@@ -20,6 +20,9 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  color: #3F3F3F;
+  line-height: 10%;
+  background-color: #FAFFF9;
 }
 
 h1, h2, h3, h4, h5, h6 {

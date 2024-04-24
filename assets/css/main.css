@@ -8,25 +8,25 @@
 
 @layer base {
   @font-face {
-    font-family: 'Raleway';
-    src: url('{{ site.baseurl }}/assets/fonts/Raleway-Regular.ttf') format('truetype');
+    font-family: "Raleway";
+    src: url("{{ site.baseurl }}/assets/fonts/Raleway-Regular.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: 'Yeseva One';
-    src: url('{{ site.baseurl }}/assets/fonts/YesevaOne-Regular.ttf') format('truetype');
+    font-family: "Yeseva One";
+    src: url("{{ site.baseurl }}/assets/fonts/YesevaOne-Regular.ttf") format("truetype");
   }
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #3F3F3F;
   line-height: 10%;
   background-color: #FAFFF9;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Yeseva One', sans-serif;
+  font-family: "Yeseva One", sans-serif;
 }
 
 header {

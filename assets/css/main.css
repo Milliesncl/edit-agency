@@ -5,7 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   @font-face {
     font-family: "Raleway";
@@ -68,3 +67,5 @@ a.email {
   from, to { border-color: transparent }
   50% { border-color: white }
 }
+
+html{scroll-behavior:smooth}

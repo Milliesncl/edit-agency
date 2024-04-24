@@ -33,6 +33,10 @@ header {
   background-color: #FAFFF9;
 }
 
+a.email {
+  text-decoration: underline;
+}
+
 .background-green {
   background-color: #09402F;
 }

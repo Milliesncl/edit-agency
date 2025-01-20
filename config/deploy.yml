@@ -4,7 +4,7 @@
 service: edit-agency
 
 # Name of the container image.
-image: docker.io/goldenson/edit-agency
+image: goldenson/edit-agency
 
 # Deploy to these servers.
 servers:

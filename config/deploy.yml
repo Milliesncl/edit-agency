@@ -10,7 +10,7 @@ image: goldenson/edit-agency
 servers:
   web:
     hosts:
-      - IP_ADDRESS # server IP
+      - 91.214.191.37 # server IP
 ssh:
   user: ubuntu
 

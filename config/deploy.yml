@@ -16,15 +16,15 @@ ssh:
 
 # Enable SSL auto certification via Let's Encrypt (and allow for multiple apps on one server).
 # Set ssl: false if using something like Cloudflare to terminate SSL (but keep host!).
-# proxy:
+proxy:
 #   ssl: true
 #   hosts:
 #     - edit-agency.fr
 #     - www.edit-agency.fr
-#   healthcheck:
-#     path: /
-#     interval: 3
-#     timeout: 30
+  healthcheck:
+    path: /
+    interval: 3
+    timeout: 30
 # # Credentials for your image host.
 registry:
   server: docker.io

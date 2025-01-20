@@ -1,0 +1,30 @@
+# Base image for Ruby
+FROM ruby:3.3.0
+
+RUN apt-get update
+RUN apt-get install -y npm
+RUN apt-get install -y nodejs
+RUN npm install -g yarn
+
+ENV JEKYLL_ENV=production
+# Set working directory
+WORKDIR /app
+
+# Copy Gemfile and Gemfile.lock
+COPY Gemfile Gemfile.lock ./
+
+# Install required gems
+RUN bundle install
+
+# Copy the rest of the app code
+COPY . .
+
+RUN yarn install
+
+RUN bundle exec jekyll build -d public
+
+# Expose port 4000 (assuming it runs on this port)
+# EXPOSE 4000
+
+# Start the server (adjust if the start command is different)
+# CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
